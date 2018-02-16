@@ -9,8 +9,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+R Prorgamming Language at [here](https://www.r-project.org/)
+RStudio Independent Development Environment for R at [here](https://www.rstudio.com/)
 ```
-R Prorgamming Language at link:https://www.r-project.org/[here]
+install.packages("rmarkdown")
+install.packages("knitr")
 ```
 
 ### Installing
@@ -71,9 +74,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **KinOn Leung** - *Initial work*
 
 ## License
 
