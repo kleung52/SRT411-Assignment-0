@@ -3,16 +3,13 @@ Readme file, Rmd file, and PDF file of assignment 0, "Introduction to R and Gith
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.  These instructions do not have to be followed in order.  Developing and testing the project was done under a Windows-based operating system hsot machine.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 R Prorgamming Language at [here](https://www.r-project.org/)
-
-
-
 
 RStudio Independent Development Environment for R at [here](https://www.rstudio.com/)
 ```
