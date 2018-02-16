@@ -3,14 +3,14 @@ Readme file, Rmd file, and PDF file of assignment 0, "Introduction to R and Gith
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+R Prorgamming Language at [here](https://www.r-project.org/)
 ```
 
 ### Installing
