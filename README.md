@@ -1,5 +1,5 @@
 # SRT411-Assignment-0
-Readme file, Rmd file, and PDF file of assignment 0
+Readme file, Rmd file, and PDF file of assignment 0, "Introduction to R and Github", are required to complete assignment 0 of SRT411. Any of the ToDo coding exercises are based off from the article, "A (Very) Short Introduction to R", of the authors, Paul Torfs and Claudia Brauer, under the Hydrology and Quantitative Water Management Group by the Wageningen University (The Netherlands) on March 3rd, 2014.  R is a language for statisticall computing and graphics under a public domain (GNU) project, which is the only language that assignment 0 is about. 
 
 ## Getting Started
 
