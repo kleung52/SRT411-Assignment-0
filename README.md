@@ -3,7 +3,7 @@ Readme file, Rmd file, and PDF file of assignment 0, "Introduction to R and Gith
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.  These instructions do not have to be followed in order.  Developing and testing the project was done under a Windows-based operating system hsot machine.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.  These instructions do not have to be followed in order.  Developing and testing the project was done under a Windows-based operating system host machine.
 
 ### Prerequisites
 
@@ -17,53 +17,18 @@ install.packages("rmarkdown")
 install.packages("knitr")
 ```
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Click on the **Knit** button within RStudio.  Use dropdown menu to choose between HTML webpage, PDF file, or Word document.
 
 ### And coding style tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+The purpose of running these codes is to explain what R language can do with examples and exerices for clarification to people without any programming experience.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [RStudio](https://www.rstudio.com/products/rstudio/download/#download) - The IDE version 1.1.423
+* [R](https://cloud.r-project.org/) - The R Language version CRAN-3.4.3
 
 ## Contributing
 
