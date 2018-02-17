@@ -19,7 +19,7 @@ install.packages("knitr")
 
 ## Running the tests
 
-Click on the **Knit** button within RStudio.  Use dropdown menu to choose between HTML webpage, PDF file, or Word document.
+Click on the **Knit** button within RStudio.  Use dropdown menu to choose between HTML webpage, PDF file, or Word document.  Be sure to set a working directory with RStudio by clicking on Session dropdown menu, then by hovering over Set Working Directory menu, and then by clicking on Choose Directory option.
 
 ### And coding style tests
 
