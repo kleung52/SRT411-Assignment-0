@@ -1,0 +1,8 @@
+x1=rnorm(100)
+x2=rnorm(100)
+x3=rnorm(100)
+t=data.frame(a=x1,b=x1+x2,c=x1+x2+x3)
+plot(t,main="ToDo #8")
+d=sd(as.numeric(unlist(t)))
+#sprintf("Standard deviation is of all plost is %s", d)
+#paste("Standard deviation of all plot graphs:", d)

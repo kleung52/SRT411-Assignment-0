@@ -1,0 +1,187 @@
+---
+title: "SRT411A0"
+author: "kleung52"
+date: "February 12, 2018"
+output:
+  pdf_document: 
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+  html_document:
+    fig_caption: yes
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button within RStudio, a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
+
+## Short Introduction
+Below are ToDo codes from the published article, A (very) Short Introduction to R, by the authors, Paul Torfs and Claudia Brauer, under the Hydrology and Quantitative Water Management Group by the Wageningen University (The Netherlands) on March 3rd, 2014.  R is a language for statistical computing and graphics in a public domain (GNU) project.  The username on GitHub account is kleung52.  A link to the document can be found at https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf.
+
+## ToDo #1 (Calculator)
+```{r}
+life=((2016-2014)/(2014-1986))*100
+```
+Percentage of life having spent at this university: `r life`%
+
+## ToDo #2 (Workspace)
+```{r}
+time_on_university=2016-2014
+time_base=2014-1986
+life_raw=(time_on_university/time_base)
+life=life_raw*100
+```
+Percentage of life having spent at this university: `r life`%
+
+## ToDo #3 (Functions)
+```{r}
+b1=c(4,5,8,11)
+b2=sum(b1)
+```
+Sum of a vector: `r b2`
+
+## ToDo #4 (Plots)
+```{r}
+plot(rnorm(100,mean=0,sd=1),main="ToDo #4")
+```
+
+## ToDo #5 (Help and Documentation)
+```{r}
+example(sqrt)
+help(sqrt)
+```
+
+## ToDo #6 (Scripts)
+```{r}
+source("firstscript.R")
+```
+
+## ToDo #7 (Vectors and Matrices)
+```{r}
+P=seq(from=31,to=60,by=1)
+P
+Q=matrix(data=P,6,5)
+Q
+```
+
+## ToDo #8 (Data Frames)
+```{r}
+source("secondscript.R")
+```
+
+Standard deviation of all plot graphs: `r d`
+
+## ToDo #9 (Graphics)
+```{r}
+source("thirdscript.R")
+help(rgb)
+```
+
+## ToDo #10 (Reading and Writing Data Files)
+```{r}
+textwrite=data.frame(a=c(1,2,4,8,16,32),g=c(2,4,8,16,32,64),x=c(3,6,12,24,48,96))
+write.table(textwrite,file="tst1.txt")
+textread=read.table(file="tst1.txt",header=TRUE)
+print(textread)
+textrewrite=data.frame(a=textread$a,g=textread$g*5,x=textread$x)
+write.table(textrewrite,file="tst2.txt")
+print(textrewrite)
+```
+
+## ToDo #11 (Not Available Data)
+```{r}
+meansquare=mean(sqrt(c(rnorm(100))))
+```
+Mean of square root of a vector with 100 random numbers: `r meansquare`
+
+## ToDo #12 (Dates)
+```{r}
+dates=strptime(c("20140216","20140304"),format="%Y%m%d")
+presents=c(0,2)
+plot(dates,presents,xlab="Dates",ylab="Number of Presents",main="Dates versus Presents")
+```
+
+## ToDo #13 (For-Loop)
+```{r}
+v=c(seq(from=1,to=100,by=1))
+s=c()
+for(i in 1:100)
+{
+  if(v[i]<5 | v[i]>90)
+  {
+    s[i]=v[i]*10
+  }
+  else
+  {
+    s[i]=v[i]*0.1
+  }
+}
+s
+```
+
+## ToDo #14 (Writing Your Own Functions)
+```{r}
+anyv=function(arg1)
+{
+l=length(arg1)
+for(i in 1:l)
+{
+  if(arg1[i]<5 | arg1[i]>90)
+  {
+    arg1[i]=arg1[i]*10
+  }
+  else
+  {
+    arg1[i]=arg1[i]*0.1
+  }
+}
+return(arg1)
+}
+retanyv=anyv(arg1=c(rnorm(20)))
+```
+Example on 20 random numbers returns:
+`r retanyv`
+
+## ToDo #15 (Writing Your Own Functions)
+```{r}
+anyv=function(arg1,i)
+{
+  l=length(arg1)
+  if(arg1[i]<5 | arg1[i]>90)
+  {
+    arg1[i]=arg1[i]*10
+  }
+  else
+  {
+    arg1[i]=arg1[i]*0.1
+  }
+  if(i==l)
+  {
+    return(arg1)
+  }
+  i=i+1
+  anyv(arg1,i)
+}
+i=1
+retanyv=anyv(arg1=c(seq(from=1,to=20,by=1)),i)
+```
+Example on 20 consecutive numbers returns: `r retanyv`
+
+```{r, echo=FALSE}
+time <- format(Sys.time(), "%a %b %d %X %Y")
+```
+Current Time of This Paper is `r time`.
+
+The end
